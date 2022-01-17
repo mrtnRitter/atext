@@ -11,12 +11,6 @@ Das ist die zweite Überschrift
 - das ist noch ein Punkt
 
 
-Das ist mal noch ein Test
-=========================
-
-
-
-
 ## das ist ein Kommentar ##
 ### 
 Das ist ein 
@@ -27,3 +21,6 @@ geht
 
 ! Das ist eine normale Aufgabe !
 
+? Das ist eine Frage zur Klärung ?
+
+DONE: Das ist erledigt und kann verschwinden
