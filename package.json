@@ -1,0 +1,25 @@
+{
+    "name": "atext",
+    "displayName": "AText",
+    "description": "Highlighting for Augmented Text",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "atext",
+            "aliases": ["AText", "atext"],
+            "extensions": [".txt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "atext",
+            "scopeName": "source.atext",
+            "path": "./syntaxes/atext.tmLanguage.json"
+        }]
+    }
+}
