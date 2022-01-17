@@ -3,27 +3,64 @@
 	"name": "AText",
 	"patterns": [
 		{
-			"include": "#keywords"
-		},
+			"include": "#blockComments"
+		}, 
 		{
-			"include": "#strings"
+			"include": "#lineComments"
+		}, 
+		{
+			"include": "#urgentTask"
+		}, 
+		{
+			"include": "#normalTask"
+		}, 
+		{
+			"include": "#headline"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.atext",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.atext",
-			"begin": "\"",
-			"end": "\"",
+		"blockComments": {
 			"patterns": [
 				{
-					"name": "constant.character.escape.atext",
-					"match": "\\\\."
+					"begin": "###",
+					"end": "###",
+					"name": "comment.block.atext"
+				}
+			]
+		}, 
+		"lineComments": {
+			"patterns": [
+				{
+					"begin": "##", 
+					"end": "\\n",
+					"name": "comment.line.number-sign.atext"
+				}
+			]
+		}, 
+		"urgentTask": {
+			"patterns": [
+				{
+					"begin": "!!",
+					"end": "!!",
+					"name": "task.urgent.atext"
+				}
+			]
+		}, 
+		"normalTask": {
+			"patterns": [
+				{
+					"begin": "!",
+					"end": "!",
+					"name": "task.normal.atext"
+				}
+			]
+		},
+		"headline": {
+			"patterns": [
+				{
+					"begin": "^[A-Z]",
+					"end": "=\\n",
+					"name": "headline.atext"
 				}
 			]
 		}
