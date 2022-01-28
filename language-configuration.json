@@ -27,9 +27,6 @@
         ["'", "'"]
     ],
     "folding": {
-        "markers": {
-        "start": "^\\w+",
-        "end": "^-"
-        }
+        "offSide": true
     }
 }

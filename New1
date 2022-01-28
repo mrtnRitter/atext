@@ -1,17 +1,18 @@
 Das ist eine Überschrift
 ========================
-- das ist der erste Punkt
-- das ist der zweite Punkt
-!! das ist eine wichtige Aufgabe !!
+ . das ist der erste Punkt
+ . das ist der zweite Punkt
+ !! das ist eine wichtige Aufgabe !!
 
 
 Das ist die zweite Überschrift
 ==============================
-- das ist der erste Punkte der zweiten Überschrift
-- das ist noch ein Punkt
+ . das ist der erste Punkte der zweiten Überschrift
+ . das ist noch ein Punkt
 
 
 ## das ist ein Kommentar ##
+
 ### 
 Das ist ein 
 großer Kommentar
@@ -19,8 +20,16 @@ der über mehrere Zeilen
 geht 
 ###
 
-! Das ist eine normale Aufgabe !
+Das ist nochmal eine Überschrift
+================================
+ . ! Das ist eine normale Aufgabe !
 
-? Das ist eine Frage zur Klärung ?
+ . ? Das ist eine Frage zur Klärung ?
 
-- DONE: Das ist erledigt und kann verschwinden
+ . DONE: Das ist erledigt und kann verschwinden
+
+ . das ist ein Satz mit ! einem normalen Task ! einem dicken Ding! und !! einem urgent Task !!
+
+ . das ist eine Frage? Und das darf nicht passieren!
+
+ . ? und das müssen wir klären ?

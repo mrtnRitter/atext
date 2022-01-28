@@ -3,23 +3,26 @@
 	"name": "AText",
 	"patterns": [
 		{
-			"include": "#blockComments"
+			"include": "#blockComment"
 		}, 
 		{
-			"include": "#lineComments"
+			"include": "#lineComment"
 		}, 
 		{
 			"include": "#urgentTask"
 		}, 
 		{
 			"include": "#normalTask"
-		}, 
+		},
+		{
+			"include": "#clarifyTask"
+		},
 		{
 			"include": "#headline"
 		}
 	],
 	"repository": {
-		"blockComments": {
+		"blockComment": {
 			"patterns": [
 				{
 					"begin": "###",
@@ -28,7 +31,7 @@
 				}
 			]
 		}, 
-		"lineComments": {
+		"lineComment": {
 			"patterns": [
 				{
 					"begin": "##", 
@@ -49,9 +52,18 @@
 		"normalTask": {
 			"patterns": [
 				{
-					"begin": "!",
-					"end": "!",
+					"begin": " ! \\w+",
+					"end": " !",
 					"name": "task.normal.atext"
+				}
+			]
+		},
+		"clarifyTask": {
+			"patterns": [
+				{
+					"begin": "(?<!\\w)\\? \\w+",
+					"end": " \\?",
+					"name": "task.clarify.atext"
 				}
 			]
 		},
