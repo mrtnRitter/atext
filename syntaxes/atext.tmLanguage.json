@@ -58,7 +58,7 @@
 		"headline": {
 			"patterns": [
 				{
-					"begin": "^[A-Z\\u00c4\\u00d6\\u00dc]",
+					"begin": "^[A-Z0-9\\u00c4\\u00d6\\u00dc]",
 					"end": "=\\n",
 					"name": "headline.atext"
 				}
