@@ -18,6 +18,12 @@
 			"include": "#clarifyTask"
 		},
 		{
+			"include": "#mention"
+		},
+		{
+			"include": "#done"
+		},
+		{
 			"include": "#headline"
 		}
 	],
@@ -36,7 +42,7 @@
 				{
 					"begin": "##", 
 					"end": "\\n",
-					"name": "comment.line.number-sign.atext"
+					"name": "comment.line.atext"
 				}
 			]
 		}, 
@@ -64,6 +70,24 @@
 					"begin": "(?<!\\w)\\? \\w+",
 					"end": " \\?",
 					"name": "task.clarify.atext"
+				}
+			]
+		},
+		"mention":{
+			"patterns": [
+				{
+					"begin": "@\\w+",
+					"end": " ",
+					"name": "mention.atext"
+				}
+			]
+		},
+		"done": {
+			"patterns": [
+				{
+					"begin": "(?<!:DONE: ) \\w+",
+					"end": "\\n",
+					"name": "done.content.atext"
 				}
 			]
 		},

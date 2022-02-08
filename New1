@@ -30,6 +30,8 @@ Das ist nochmal eine Überschrift
 
  . das ist ein Satz mit ! einem normalen Task ! einem dicken Ding! und !! einem urgent Task !!
 
- . das ist eine Frage? Und das darf nicht passieren!
+ . :DONE: das ist eine Frage? Und das darf nicht passieren!
 
  . ? und das müssen wir klären ?
+
+ . @Jemand: Wie machen wir das?
