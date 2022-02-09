@@ -21,9 +21,6 @@
 			"include": "#mention"
 		},
 		{
-			"include": "#done"
-		},
-		{
 			"include": "#headline"
 		}
 	],
@@ -79,15 +76,6 @@
 					"begin": "@\\w+",
 					"end": " ",
 					"name": "mention.atext"
-				}
-			]
-		},
-		"done": {
-			"patterns": [
-				{
-					"begin": "(?<!:DONE: ) \\w+",
-					"end": "\\n",
-					"name": "done.content.atext"
 				}
 			]
 		},
