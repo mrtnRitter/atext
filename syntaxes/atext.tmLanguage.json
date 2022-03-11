@@ -73,7 +73,7 @@
 		"mention":{
 			"patterns": [
 				{
-					"begin": "@\\w+",
+					"begin": " @\\w+",
 					"end": " ",
 					"name": "mention.atext"
 				}
