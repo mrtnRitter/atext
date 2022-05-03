@@ -1,0 +1,25 @@
+Überschrift
+===========
+ . etwas Text und ! ein normaler Task !
+ . !! ein dringender Task !! und etwas Text
+ . hier gibt es ? etwas zu klären ?
+ . das ist wichtig! ## das war mal wichtig
+
+ ###
+ Das ist schon lange erledigt
+ aber wir wollen es noch 
+ im Dokument belassen
+ ###
+
+
+Weitere Überschrift
+===================
+ . ## achte auf das Folding und die Leerzeilen!
+
+
+!! To Do: !!
+ . :Done:
+ . ✓
+ . ✗
+ . Topic Start ... Topic End
+ . fix @Name ! Task !
